@@ -49,7 +49,7 @@ namespace TestStudentRegistration.Controllers
         [Route("api/StudentMaster/SearchStudent/{searchText}")]
         [ResponseType(typeof(StudentMasterDTO))]
         public async Task<IHttpActionResult> Search(string searchText)
-        0{
+        {
             try
             {
                 var studentMaster = await studentService.Search(searchText);
